@@ -1,0 +1,386 @@
+export type Plate = {
+  id: string;
+  name: string;
+  price: number;
+  note?: string;
+};
+
+export type DayName =
+  | "Sunday"
+  | "Monday"
+  | "Tuesday"
+  | "Wednesday"
+  | "Thursday"
+  | "Friday"
+  | "Saturday";
+
+// Daily rotating plates — matches the real week-by-week specials board.
+export const dailyPlates: Record<DayName, Plate[]> = {
+  Monday: [
+    { id: "mon-baked-dress", name: "Baked Chicken with Dressing", price: 23.99 },
+    { id: "mon-fried", name: "Fried Chicken", price: 23.99 },
+    { id: "mon-hot-honey", name: "Hot Honey Chicken", price: 24.99 },
+    { id: "mon-cajun", name: "Cajun Chicken", price: 24.99 },
+    { id: "mon-smothered", name: "Smothered Chicken", price: 24.99 },
+    { id: "mon-chopped-steak", name: "Smothered Chopped Steak", price: 23.99 },
+    { id: "mon-pork-chops", name: "Smothered Pork Chops", price: 24.99 },
+    { id: "mon-veggie", name: "Veggie Plate (4 Sides)", price: 23.99 },
+    { id: "mon-tky-dress", name: "Turkey Wing & Dressing", price: 26.99 },
+    { id: "mon-corned-beef", name: "Corned Beef & Cabbage", price: 27.99 },
+    { id: "mon-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
+  ],
+  Tuesday: [
+    { id: "tue-short-ribs", name: "Short Ribs of Beef", price: 34.99 },
+    { id: "tue-baked", name: "Baked Chicken", price: 23.99 },
+    { id: "tue-fried", name: "Fried Chicken", price: 23.99 },
+    { id: "tue-hot-honey", name: "Hot Honey Chicken", price: 24.99 },
+    { id: "tue-cajun", name: "Cajun Chicken", price: 24.99 },
+    { id: "tue-smothered", name: "Smothered Chicken", price: 24.99 },
+    { id: "tue-chopped-steak", name: "Smothered Chopped Steak", price: 23.99 },
+    { id: "tue-pork-chops", name: "Smothered Pork Chops", price: 24.99 },
+    { id: "tue-veggie", name: "Veggie Plate (4 Sides)", price: 23.99 },
+    { id: "tue-tky-dress", name: "Turkey Wing & Dressing", price: 26.99 },
+    { id: "tue-corned-beef", name: "Corned Beef & Cabbage", price: 27.99 },
+    { id: "tue-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
+  ],
+  Wednesday: [
+    { id: "wed-baked", name: "Baked Chicken", price: 23.99 },
+    { id: "wed-fried", name: "Fried Chicken", price: 23.99 },
+    { id: "wed-hot-honey", name: "Hot Honey Chicken", price: 24.99 },
+    { id: "wed-cajun", name: "Cajun Chicken", price: 24.99 },
+    { id: "wed-smothered", name: "Smothered Chicken", price: 24.99 },
+    { id: "wed-short-ribs", name: "Short Ribs of Beef", price: 34.99 },
+    { id: "wed-chopped-steak", name: "Smothered Chopped Steak", price: 23.99 },
+    { id: "wed-pork-chops", name: "Smothered Pork Chops", price: 23.99 },
+    { id: "wed-corned-beef", name: "Corned Beef & Cabbage", price: 27.99 },
+    { id: "wed-veggie", name: "Veggie Plate (4 Sides)", price: 23.99 },
+    { id: "wed-dumplings", name: "Chicken & Dumplings", price: 26.99 },
+    { id: "wed-bbq-fried", name: "BBQ Fried Chicken", price: 24.99, note: "Fried chicken smothered in BBQ sauce" },
+    { id: "wed-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
+  ],
+  Thursday: [
+    { id: "thu-short-ribs", name: "Short Ribs of Beef", price: 34.99 },
+    { id: "thu-baked-dress", name: "Baked Chicken & Dressing", price: 23.99 },
+    { id: "thu-fried", name: "Fried Chicken", price: 23.99 },
+    { id: "thu-hot-honey", name: "Hot Honey Chicken", price: 24.99 },
+    { id: "thu-cajun", name: "Cajun Chicken", price: 24.99 },
+    { id: "thu-smothered", name: "Smothered Chicken", price: 24.99 },
+    { id: "thu-pepper-steak", name: "Pepper Steak & Rice", price: 26.99 },
+    { id: "thu-chopped-steak", name: "Smothered Chopped Steak", price: 23.99 },
+    { id: "thu-pork-chops", name: "Smothered Pork Chops", price: 24.99 },
+    { id: "thu-veggie", name: "Veggie Plate (4 Sides)", price: 23.99 },
+    { id: "thu-ham-hocks", name: "Ham Hocks", price: 23.99 },
+    { id: "thu-rib-tips", name: "BBQ Rib Tips", price: 24.99 },
+    { id: "thu-bbq-fried", name: "BBQ Fried Chicken", price: 24.99, note: "Fried chicken smothered in BBQ sauce" },
+    { id: "thu-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
+  ],
+  Friday: [
+    { id: "fri-short-ribs", name: "Short Ribs of Beef", price: 34.99 },
+    { id: "fri-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
+    { id: "fri-baked", name: "Baked Chicken", price: 23.99 },
+    { id: "fri-fried", name: "Fried Chicken", price: 23.99 },
+    { id: "fri-hot-honey", name: "Hot Honey Chicken", price: 24.99 },
+    { id: "fri-cajun", name: "Cajun Chicken", price: 24.99 },
+    { id: "fri-smothered", name: "Smothered Chicken", price: 24.99 },
+    { id: "fri-rib-tips", name: "BBQ Rib Tips", price: 24.99 },
+    { id: "fri-chopped-steak", name: "Smothered Chopped Steak", price: 23.99 },
+    { id: "fri-pork-chops", name: "Smothered Pork Chops", price: 24.99 },
+    { id: "fri-veggie", name: "Veggie Plate (4 Sides)", price: 23.99 },
+    { id: "fri-ham-hocks", name: "Ham Hocks", price: 23.99 },
+    { id: "fri-bbq-fried", name: "BBQ Fried Chicken", price: 24.99, note: "Fried chicken smothered in BBQ sauce" },
+  ],
+  Saturday: [
+    { id: "sat-short-ribs", name: "Short Ribs of Beef", price: 34.99 },
+    { id: "sat-baked", name: "Baked Chicken", price: 23.99 },
+    { id: "sat-fried", name: "Fried Chicken", price: 23.99 },
+    { id: "sat-hot-honey", name: "Hot Honey Chicken", price: 24.99 },
+    { id: "sat-tky-dress", name: "Turkey Wing & Dressing", price: 26.99 },
+    { id: "sat-rib-tips", name: "BBQ Rib Tips", price: 24.99 },
+    { id: "sat-chopped-steak", name: "Smothered Chopped Steak", price: 23.99 },
+    { id: "sat-pork-chops", name: "Smothered Pork Chops", price: 24.99 },
+    { id: "sat-veggie", name: "Veggie Plate (4 Sides)", price: 23.99 },
+    { id: "sat-ham-hocks", name: "Ham Hocks", price: 23.99 },
+    { id: "sat-bbq-fried", name: "BBQ Fried Chicken", price: 24.99, note: "Fried chicken smothered in BBQ sauce" },
+    { id: "sat-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
+  ],
+  Sunday: [
+    { id: "sun-short-ribs", name: "Short Ribs of Beef", price: 34.99 },
+    { id: "sun-cornish-hen", name: "Cornish Hen & Dressing", price: 28.99 },
+    { id: "sun-fried", name: "Fried Chicken", price: 23.99 },
+    { id: "sun-baked", name: "Baked Chicken", price: 23.99 },
+    { id: "sun-hot-honey", name: "Hot Honey Chicken", price: 24.99 },
+    { id: "sun-smothered", name: "Smothered Chicken", price: 24.99 },
+    { id: "sun-tky-dress", name: "Turkey Wings & Dressing", price: 28.99 },
+    { id: "sun-rib-tips", name: "BBQ Rib Tips", price: 24.99 },
+    { id: "sun-oxtails", name: "Braised Ox Tails", price: 28.99 },
+    { id: "sun-chopped-steak", name: "Smothered Chopped Steak", price: 23.99 },
+    { id: "sun-pork-chops", name: "Smothered Pork Chops", price: 24.99 },
+    { id: "sun-veggie", name: "Veggie Plate (4 Sides)", price: 23.99 },
+    { id: "sun-ham-hocks", name: "Ham Hocks", price: 23.99 },
+    { id: "sun-bbq-fried", name: "BBQ Fried Chicken", price: 24.99, note: "Fried chicken smothered in BBQ sauce" },
+    { id: "sun-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
+  ],
+};
+
+export const sides: Plate[] = [
+  { id: "side-black-eyed-peas", name: "Black Eyed Peas (with or without Rice)", price: 6.5 },
+  { id: "side-red-beans", name: "Red Beans (with or without Rice)", price: 6.5 },
+  { id: "side-string-beans", name: "String Beans with White Potatoes", price: 6.5 },
+  { id: "side-dressing", name: "Cornbread Dressing", price: 6.5 },
+  { id: "side-mashed", name: "Garlic Mashed Potatoes", price: 6.5 },
+  { id: "side-yams", name: "Candied Sweet Potatoes", price: 6.5 },
+  { id: "side-rice", name: "Steamed White Rice", price: 6.5 },
+  { id: "side-corn", name: "Sweet Buttery Corn", price: 6.5 },
+  { id: "side-cabbage", name: "Cabbage", price: 6.5 },
+  { id: "side-mac", name: "Macaroni & Cheese", price: 6.5 },
+  { id: "side-spaghetti", name: "Spaghetti", price: 6.5 },
+];
+
+export const desserts: Plate[] = [
+  { id: "dessert-banana-pudding", name: "Banana Pudding", price: 8.5 },
+  { id: "dessert-chocolate-cake", name: "Chocolate Cake Slice", price: 7.5 },
+  { id: "dessert-lemon-cake", name: "Lemon Cake Slice (Homemade!)", price: 7.5 },
+  { id: "dessert-pineapple-cake", name: "Pineapple Coconut Cake", price: 7.5 },
+  { id: "dessert-sour-cream-pound", name: "Sour Cream Pound Cake", price: 5.5 },
+  { id: "dessert-lemon-pound", name: "Lemon Pound Cake (Homemade!)", price: 5.5 },
+  { id: "dessert-biscoff-pudding", name: "Biscoff Cookie Butter Banana Pudding", price: 10, note: "Layers of fresh bananas, cookie butter, wafers & Biscoff cookies" },
+];
+
+export type ByPieceItem = { id: string; name: string; price: number; unit: string; note?: string };
+
+// Catering: sold by the piece, minimum 20 pieces
+export const byThePiece: ByPieceItem[] = [
+  { id: "piece-short-ribs", name: "Short Ribs of Beef", price: 11.5, unit: "per piece" },
+  { id: "piece-pork-chop", name: "Smothered Pork Chop", price: 6, unit: "per piece" },
+  { id: "piece-chopped-steak", name: "Smothered Chopped Steak", price: 6, unit: "per piece" },
+  { id: "piece-turkey-wing", name: "Turkey Wing", price: 10, unit: "per piece" },
+  { id: "piece-cornish-hen", name: "Cornish Hen", price: 10, unit: "per piece" },
+  { id: "piece-catfish", name: "Fried Catfish Fillet", price: 8, unit: "per piece" },
+  { id: "piece-salmon", name: "Stuffed Salmon", price: 12, unit: "per piece", note: "72 hour notice required" },
+  { id: "piece-turkey-leg", name: "Smoked BBQ Turkey Leg", price: 8, unit: "per piece" },
+  { id: "piece-baked-chicken", name: "Baked Chicken", price: 1.75, unit: "per piece" },
+  { id: "piece-cajun-chicken", name: "Cajun Chicken", price: 1.85, unit: "per piece" },
+  { id: "piece-fried-chicken", name: "Fried Chicken", price: 2.5, unit: "per piece" },
+  { id: "piece-wings", name: "Fried Chicken Wings", price: 2.25, unit: "per piece" },
+  { id: "piece-hot-honey", name: "Hot Honey Chicken", price: 1.85, unit: "per piece" },
+  { id: "piece-smothered-chicken", name: "Smothered Chicken", price: 1.85, unit: "per piece" },
+  { id: "piece-muffins", name: "Cornbread Muffins", price: 15, unit: "per dozen" },
+  { id: "piece-turkey", name: "Deep Fried Turkey (10-12 lbs.)", price: 75, unit: "whole" },
+  { id: "piece-ham", name: "Spiral Cut Ham (9-10 lbs.)", price: 85, unit: "whole" },
+];
+
+export type PanItem = {
+  id: string;
+  name: string;
+  prices: { size: "X-Small" | "Small" | "Medium" | "Large"; price: number }[];
+  servesNote?: string;
+};
+
+// Catering: sold by the pan. Serves — X-Small 12-15 | Small 20-25 | Medium 30-40 | Large 45-50
+export const byThePan: PanItem[] = [
+  {
+    id: "pan-rib-tips",
+    name: "Rib Tips",
+    prices: [
+      { size: "X-Small", price: 100 },
+      { size: "Small", price: 120 },
+      { size: "Medium", price: 125 },
+      { size: "Large", price: 140 },
+    ],
+  },
+  {
+    id: "pan-pot-roast",
+    name: "Pot Roast",
+    prices: [
+      { size: "X-Small", price: 100 },
+      { size: "Small", price: 120 },
+      { size: "Medium", price: 125 },
+      { size: "Large", price: 140 },
+    ],
+  },
+  {
+    id: "pan-corned-beef",
+    name: "Corned Beef & Cabbage",
+    prices: [
+      { size: "X-Small", price: 115 },
+      { size: "Small", price: 125 },
+      { size: "Medium", price: 145 },
+      { size: "Large", price: 160 },
+    ],
+  },
+  {
+    id: "pan-mac",
+    name: "Macaroni & Cheese",
+    prices: [
+      { size: "X-Small", price: 90 },
+      { size: "Small", price: 110 },
+      { size: "Medium", price: 120 },
+      { size: "Large", price: 140 },
+    ],
+  },
+  {
+    id: "pan-yams",
+    name: "Candied Sweet Potatoes",
+    prices: [
+      { size: "X-Small", price: 80 },
+      { size: "Small", price: 90 },
+      { size: "Medium", price: 100 },
+      { size: "Large", price: 120 },
+    ],
+  },
+  {
+    id: "pan-dressing",
+    name: "Cornbread Dressing",
+    prices: [
+      { size: "X-Small", price: 80 },
+      { size: "Small", price: 90 },
+      { size: "Medium", price: 100 },
+      { size: "Large", price: 120 },
+    ],
+  },
+  {
+    id: "pan-rice",
+    name: "Steamed Rice",
+    prices: [
+      { size: "X-Small", price: 65 },
+      { size: "Small", price: 80 },
+      { size: "Medium", price: 95 },
+      { size: "Large", price: 110 },
+    ],
+  },
+  {
+    id: "pan-red-beans",
+    name: "Red Beans & Rice",
+    prices: [
+      { size: "X-Small", price: 80 },
+      { size: "Small", price: 90 },
+      { size: "Medium", price: 100 },
+      { size: "Large", price: 120 },
+    ],
+  },
+  {
+    id: "pan-black-eyed-peas",
+    name: "Black Eyed Peas",
+    prices: [
+      { size: "X-Small", price: 80 },
+      { size: "Small", price: 90 },
+      { size: "Medium", price: 100 },
+      { size: "Large", price: 120 },
+    ],
+  },
+  {
+    id: "pan-corn",
+    name: "Sweet Buttery Corn",
+    prices: [
+      { size: "X-Small", price: 70 },
+      { size: "Small", price: 80 },
+      { size: "Medium", price: 90 },
+      { size: "Large", price: 100 },
+    ],
+  },
+  {
+    id: "pan-string-beans",
+    name: "String Beans & Potatoes",
+    prices: [
+      { size: "X-Small", price: 70 },
+      { size: "Small", price: 80 },
+      { size: "Medium", price: 90 },
+      { size: "Large", price: 100 },
+    ],
+  },
+  {
+    id: "pan-spaghetti",
+    name: "Spaghetti",
+    prices: [
+      { size: "X-Small", price: 80 },
+      { size: "Small", price: 90 },
+      { size: "Medium", price: 100 },
+      { size: "Large", price: 120 },
+    ],
+  },
+  {
+    id: "pan-mashed",
+    name: "Garlic Mashed Potatoes",
+    prices: [
+      { size: "X-Small", price: 70 },
+      { size: "Small", price: 80 },
+      { size: "Medium", price: 90 },
+      { size: "Large", price: 100 },
+    ],
+  },
+  {
+    id: "pan-collards",
+    name: "Collard Greens",
+    prices: [
+      { size: "X-Small", price: 80 },
+      { size: "Small", price: 90 },
+      { size: "Medium", price: 100 },
+      { size: "Large", price: 120 },
+    ],
+  },
+  {
+    id: "pan-cabbage",
+    name: "Cabbage",
+    prices: [
+      { size: "X-Small", price: 80 },
+      { size: "Small", price: 90 },
+      { size: "Medium", price: 100 },
+      { size: "Large", price: 120 },
+    ],
+  },
+  {
+    id: "pan-gravy",
+    name: "Gravy",
+    prices: [
+      { size: "X-Small", price: 50 },
+      { size: "Small", price: 60 },
+      { size: "Medium", price: 70 },
+      { size: "Large", price: 80 },
+    ],
+  },
+  {
+    id: "pan-peach-cobbler",
+    name: "Peach Cobbler",
+    prices: [
+      { size: "X-Small", price: 90 },
+      { size: "Small", price: 110 },
+      { size: "Medium", price: 120 },
+      { size: "Large", price: 140 },
+    ],
+  },
+  {
+    id: "pan-banana-pudding",
+    name: "Hasana's Sweets Banana Pudding",
+    prices: [
+      { size: "X-Small", price: 90 },
+      { size: "Small", price: 110 },
+      { size: "Medium", price: 120 },
+      { size: "Large", price: 140 },
+    ],
+  },
+];
+
+export const restaurant = {
+  name: "Morrison's Soul Food",
+  tagline: "Home of the Heavy Plate",
+  address: "148 W 79th St, Chicago, IL 60620",
+  phone: "(872) 600-8243",
+  hours: {
+    weekday: "11:00 AM – 8:00 PM (Mon–Fri)",
+    weekend: "11:00 AM – 9:00 PM (Sat–Sun)",
+  },
+  since: 2002,
+};
+
+export function getTodayName(): DayName {
+  const days: DayName[] = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  return days[new Date().getDay()];
+}
