@@ -11,18 +11,20 @@ import {
   dailyPlates,
   sides,
   desserts,
+  hasanasSweets,
   byThePiece,
   byThePan,
   restaurant,
   getTodayName,
 } from "@/data/menu";
 
-type Tab = "today" | "sides" | "desserts" | "catering";
+type Tab = "today" | "sides" | "desserts" | "hasanas" | "catering";
 
 const tabs: { id: Tab; label: string }[] = [
   { id: "today", label: "Today's Plates" },
   { id: "sides", label: "Sides" },
   { id: "desserts", label: "Desserts" },
+  { id: "hasanas", label: "Hasana's Sweets" },
   { id: "catering", label: "Catering" },
 ];
 
@@ -149,6 +151,23 @@ export default function Home() {
             <div>
               {desserts.map((d) => (
                 <PlateCard key={d.id} {...d} />
+              ))}
+            </div>
+          </div>
+        )}
+
+        {tab === "hasanas" && (
+          <div>
+            <h2 className="mb-1 font-display text-2xl text-cream">
+              Hasana&apos;s Sweets
+            </h2>
+            <p className="mb-6 font-body text-sm text-cream2/60">
+              Specialty banana puddings, cobblers, shakes &amp; cookies —
+              the dessert bar inside Morrison&apos;s.
+            </p>
+            <div>
+              {hasanasSweets.map((h) => (
+                <PlateCard key={h.id} {...h} />
               ))}
             </div>
           </div>

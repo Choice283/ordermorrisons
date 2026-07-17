@@ -137,13 +137,29 @@ export const sides: Plate[] = [
 ];
 
 export const desserts: Plate[] = [
-  { id: "dessert-banana-pudding", name: "Banana Pudding", price: 8.5 },
+  { id: "dessert-banana-pudding", name: "Banana Pudding", price: 8.5, note: "Homemade, made with wafers & Chessman cookies" },
   { id: "dessert-chocolate-cake", name: "Chocolate Cake Slice", price: 7.5 },
   { id: "dessert-lemon-cake", name: "Lemon Cake Slice (Homemade!)", price: 7.5 },
   { id: "dessert-pineapple-cake", name: "Pineapple Coconut Cake", price: 7.5 },
   { id: "dessert-sour-cream-pound", name: "Sour Cream Pound Cake", price: 5.5 },
   { id: "dessert-lemon-pound", name: "Lemon Pound Cake (Homemade!)", price: 5.5 },
-  { id: "dessert-biscoff-pudding", name: "Biscoff Cookie Butter Banana Pudding", price: 10, note: "Layers of fresh bananas, cookie butter, wafers & Biscoff cookies" },
+];
+
+// Hasana's Sweets — the dessert bar operating inside Morrison's
+export const hasanasSweets: Plate[] = [
+  { id: "hasana-banana-pudding-large", name: "Banana Pudding (Large)", price: 8.5, note: "Premium homemade banana pudding with wafers & Chessman cookies" },
+  { id: "hasana-biscoff-pudding", name: "Biscoff Cookie Butter Banana Pudding", price: 10, note: "Layers of fresh banana, cookie butter, wafers & Biscoff cookies" },
+  { id: "hasana-strawberry-shortcake-pudding", name: "Strawberry Shortcake Banana Pudding", price: 14.5 },
+  { id: "hasana-chessman-pudding", name: "Chessman Banana Pudding", price: 11.5, note: "No bananas" },
+  { id: "hasana-peach-cobbler", name: "Peach Cobbler", price: 11.5 },
+  { id: "hasana-cherry-cobbler", name: "Cherry Cobbler", price: 11.5 },
+  { id: "hasana-caramel-apple-cobbler", name: "Caramel Apple Cobbler", price: 11.5 },
+  { id: "hasana-peach-cobbler-shake", name: "Peach Cobbler Shake", price: 10 },
+  { id: "hasana-cherry-cobbler-shake", name: "Cherry Cobbler Shake", price: 10 },
+  { id: "hasana-strawberry-cookie", name: "Strawberry Cookie", price: 5.5 },
+  { id: "hasana-banana-pudding-cookie", name: "Banana Pudding Cookie", price: 5.5 },
+  { id: "hasana-red-velvet-oreo", name: "Red Velvet Oreo Cookie", price: 5.5 },
+  { id: "hasana-snickerdoodle-lucky-charm", name: "Snickerdoodle x Lucky Charm Cookie", price: 5.5 },
 ];
 
 export type ByPieceItem = { id: string; name: string; price: number; unit: string; note?: string };
