@@ -14,6 +14,7 @@ const config: Config = {
         surface2: "#2E221B",
         oxblood: "#7A2233",
         oxblood2: "#9A2E42",
+        morrisonred: "#D1001F",
         brass: "#CC9A3F",
         brass2: "#E3B75C",
         cream: "#F4EDE1",
