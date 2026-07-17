@@ -6,6 +6,7 @@ import CartDrawer from "@/components/CartDrawer";
 import PlateCard from "@/components/PlateCard";
 import PanCard from "@/components/PanCard";
 import PieceCard from "@/components/PieceCard";
+import Story from "@/components/Story";
 import {
   dailyPlates,
   sides,
@@ -175,8 +176,16 @@ export default function Home() {
         )}
       </section>
 
+      <Story />
+
       <footer className="border-t border-brass/15 px-5 py-8 text-center font-body text-xs text-cream2/40">
-        {restaurant.name} · {restaurant.address} · {restaurant.phone}
+        <p>
+          {restaurant.name} · {restaurant.address} · {restaurant.phone}
+        </p>
+        <p className="mt-2 text-cream2/25">
+          Ordering by{" "}
+          <span className="text-brass2/50">Local Order App</span>
+        </p>
       </footer>
 
       <CartDrawer />

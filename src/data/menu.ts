@@ -365,12 +365,41 @@ export const restaurant = {
   tagline: "Home of the Heavy Plate",
   address: "148 W 79th St, Chicago, IL 60620",
   phone: "(872) 600-8243",
+  email: "morrisonsoulfood@gmail.com",
   hours: {
     weekday: "11:00 AM – 8:00 PM (Mon–Fri)",
     weekend: "11:00 AM – 9:00 PM (Sat–Sun)",
   },
   since: 2002,
+  founders: "Cookie & Eddie Morrison",
+  story:
+    "Started in 2002 by Cookie and Eddie Morrison, this Auburn Gresham kitchen has been run by their daughter Sheila since she was a kid working the counter alongside them. The line has stretched down Ashland Avenue in every kind of Chicago weather, and the restaurant has kept the neighborhood fed — and its young people employed — for over two decades.",
+  neighborhood: "Auburn Gresham",
 };
+
+export const reviews = [
+  {
+    name: "Wilbert J.",
+    source: "Google",
+    quote:
+      "Reminds me of being in the Deep South — tasty, flavorful, and seasoned so well.",
+  },
+  {
+    name: "Brenda S.",
+    source: "Google",
+    quote: "Glad I gave it a shot — the short rib and service were both on point.",
+  },
+  {
+    name: "Briana L.",
+    source: "Google",
+    quote: "The food here is amazing, customer service is great, I'll be back.",
+  },
+  {
+    name: "Sheila M.",
+    source: "Google",
+    quote: "Delicious, hot and fresh — and the plates were heavy.",
+  },
+];
 
 export function getTodayName(): DayName {
   const days: DayName[] = [
