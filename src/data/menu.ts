@@ -1,3 +1,9 @@
+// NOTE ON IMAGES: entries pointing to /images/ai-placeholder/ are AI-generated
+// stock-style photos, not real photos of Morrison's actual food. They're here
+// to make the demo look complete for pitch purposes. Every one of these should
+// be swapped for a real photo (see /images/README.md for the naming pattern)
+// before this ever represents itself as showing Morrison's real dishes.
+
 export type Plate = {
   id: string;
   name: string;
@@ -24,11 +30,11 @@ export const dailyPlates: Record<DayName, Plate[]> = {
     { id: "mon-cajun", name: "Cajun Chicken", price: 24.99 },
     { id: "mon-smothered", name: "Smothered Chicken", price: 24.99 },
     { id: "mon-chopped-steak", name: "Smothered Chopped Steak", price: 23.99 },
-    { id: "mon-pork-chops", name: "Smothered Pork Chops", price: 24.99 },
+    { id: "mon-pork-chops", name: "Smothered Pork Chops", price: 24.99, image: "/images/ai-placeholder/smothered-pork-chops.webp" },
     { id: "mon-veggie", name: "Veggie Plate (4 Sides)", price: 23.99 },
     { id: "mon-tky-dress", name: "Turkey Wing & Dressing", price: 26.99 },
     { id: "mon-corned-beef", name: "Corned Beef & Cabbage", price: 27.99 },
-    { id: "mon-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
+    { id: "mon-catfish", name: "Fried Catfish & Spaghetti", price: 26.99, image: "/images/ai-placeholder/catfish-spaghetti.webp" },
   ],
   Tuesday: [
     { id: "tue-short-ribs", name: "Short Ribs of Beef", price: 34.99, image: "/images/gallery-4.jpg" },
@@ -38,11 +44,11 @@ export const dailyPlates: Record<DayName, Plate[]> = {
     { id: "tue-cajun", name: "Cajun Chicken", price: 24.99 },
     { id: "tue-smothered", name: "Smothered Chicken", price: 24.99 },
     { id: "tue-chopped-steak", name: "Smothered Chopped Steak", price: 23.99 },
-    { id: "tue-pork-chops", name: "Smothered Pork Chops", price: 24.99 },
+    { id: "tue-pork-chops", name: "Smothered Pork Chops", price: 24.99, image: "/images/ai-placeholder/smothered-pork-chops.webp" },
     { id: "tue-veggie", name: "Veggie Plate (4 Sides)", price: 23.99 },
     { id: "tue-tky-dress", name: "Turkey Wing & Dressing", price: 26.99 },
     { id: "tue-corned-beef", name: "Corned Beef & Cabbage", price: 27.99 },
-    { id: "tue-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
+    { id: "tue-catfish", name: "Fried Catfish & Spaghetti", price: 26.99, image: "/images/ai-placeholder/catfish-spaghetti.webp" },
   ],
   Wednesday: [
     { id: "wed-baked", name: "Baked Chicken", price: 23.99 },
@@ -52,12 +58,12 @@ export const dailyPlates: Record<DayName, Plate[]> = {
     { id: "wed-smothered", name: "Smothered Chicken", price: 24.99 },
     { id: "wed-short-ribs", name: "Short Ribs of Beef", price: 34.99, image: "/images/gallery-4.jpg" },
     { id: "wed-chopped-steak", name: "Smothered Chopped Steak", price: 23.99 },
-    { id: "wed-pork-chops", name: "Smothered Pork Chops", price: 23.99 },
+    { id: "wed-pork-chops", name: "Smothered Pork Chops", price: 23.99, image: "/images/ai-placeholder/smothered-pork-chops.webp" },
     { id: "wed-corned-beef", name: "Corned Beef & Cabbage", price: 27.99 },
     { id: "wed-veggie", name: "Veggie Plate (4 Sides)", price: 23.99 },
     { id: "wed-dumplings", name: "Chicken & Dumplings", price: 26.99 },
     { id: "wed-bbq-fried", name: "BBQ Fried Chicken", price: 24.99, note: "Fried chicken smothered in BBQ sauce" },
-    { id: "wed-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
+    { id: "wed-catfish", name: "Fried Catfish & Spaghetti", price: 26.99, image: "/images/ai-placeholder/catfish-spaghetti.webp" },
   ],
   Thursday: [
     { id: "thu-short-ribs", name: "Short Ribs of Beef", price: 34.99, image: "/images/gallery-4.jpg" },
@@ -68,16 +74,16 @@ export const dailyPlates: Record<DayName, Plate[]> = {
     { id: "thu-smothered", name: "Smothered Chicken", price: 24.99 },
     { id: "thu-pepper-steak", name: "Pepper Steak & Rice", price: 26.99 },
     { id: "thu-chopped-steak", name: "Smothered Chopped Steak", price: 23.99 },
-    { id: "thu-pork-chops", name: "Smothered Pork Chops", price: 24.99 },
+    { id: "thu-pork-chops", name: "Smothered Pork Chops", price: 24.99, image: "/images/ai-placeholder/smothered-pork-chops.webp" },
     { id: "thu-veggie", name: "Veggie Plate (4 Sides)", price: 23.99 },
-    { id: "thu-ham-hocks", name: "Ham Hocks", price: 23.99 },
+    { id: "thu-ham-hocks", name: "Ham Hocks", price: 23.99, image: "/images/ai-placeholder/ham-hocks.webp" },
     { id: "thu-rib-tips", name: "BBQ Rib Tips", price: 24.99 },
     { id: "thu-bbq-fried", name: "BBQ Fried Chicken", price: 24.99, note: "Fried chicken smothered in BBQ sauce" },
-    { id: "thu-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
+    { id: "thu-catfish", name: "Fried Catfish & Spaghetti", price: 26.99, image: "/images/ai-placeholder/catfish-spaghetti.webp" },
   ],
   Friday: [
     { id: "fri-short-ribs", name: "Short Ribs of Beef", price: 34.99, image: "/images/gallery-4.jpg" },
-    { id: "fri-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
+    { id: "fri-catfish", name: "Fried Catfish & Spaghetti", price: 26.99, image: "/images/ai-placeholder/catfish-spaghetti.webp" },
     { id: "fri-baked", name: "Baked Chicken", price: 23.99 },
     { id: "fri-fried", name: "Fried Chicken", price: 23.99, image: "/images/gallery-3.jpg" },
     { id: "fri-hot-honey", name: "Hot Honey Chicken", price: 24.99 },
@@ -85,9 +91,9 @@ export const dailyPlates: Record<DayName, Plate[]> = {
     { id: "fri-smothered", name: "Smothered Chicken", price: 24.99 },
     { id: "fri-rib-tips", name: "BBQ Rib Tips", price: 24.99 },
     { id: "fri-chopped-steak", name: "Smothered Chopped Steak", price: 23.99 },
-    { id: "fri-pork-chops", name: "Smothered Pork Chops", price: 24.99 },
+    { id: "fri-pork-chops", name: "Smothered Pork Chops", price: 24.99, image: "/images/ai-placeholder/smothered-pork-chops.webp" },
     { id: "fri-veggie", name: "Veggie Plate (4 Sides)", price: 23.99 },
-    { id: "fri-ham-hocks", name: "Ham Hocks", price: 23.99 },
+    { id: "fri-ham-hocks", name: "Ham Hocks", price: 23.99, image: "/images/ai-placeholder/ham-hocks.webp" },
     { id: "fri-bbq-fried", name: "BBQ Fried Chicken", price: 24.99, note: "Fried chicken smothered in BBQ sauce" },
   ],
   Saturday: [
@@ -98,11 +104,11 @@ export const dailyPlates: Record<DayName, Plate[]> = {
     { id: "sat-tky-dress", name: "Turkey Wing & Dressing", price: 26.99 },
     { id: "sat-rib-tips", name: "BBQ Rib Tips", price: 24.99 },
     { id: "sat-chopped-steak", name: "Smothered Chopped Steak", price: 23.99 },
-    { id: "sat-pork-chops", name: "Smothered Pork Chops", price: 24.99 },
+    { id: "sat-pork-chops", name: "Smothered Pork Chops", price: 24.99, image: "/images/ai-placeholder/smothered-pork-chops.webp" },
     { id: "sat-veggie", name: "Veggie Plate (4 Sides)", price: 23.99 },
-    { id: "sat-ham-hocks", name: "Ham Hocks", price: 23.99 },
+    { id: "sat-ham-hocks", name: "Ham Hocks", price: 23.99, image: "/images/ai-placeholder/ham-hocks.webp" },
     { id: "sat-bbq-fried", name: "BBQ Fried Chicken", price: 24.99, note: "Fried chicken smothered in BBQ sauce" },
-    { id: "sat-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
+    { id: "sat-catfish", name: "Fried Catfish & Spaghetti", price: 26.99, image: "/images/ai-placeholder/catfish-spaghetti.webp" },
   ],
   Sunday: [
     { id: "sun-short-ribs", name: "Short Ribs of Beef", price: 34.99, image: "/images/gallery-4.jpg" },
@@ -115,25 +121,25 @@ export const dailyPlates: Record<DayName, Plate[]> = {
     { id: "sun-rib-tips", name: "BBQ Rib Tips", price: 24.99 },
     { id: "sun-oxtails", name: "Braised Ox Tails", price: 28.99 },
     { id: "sun-chopped-steak", name: "Smothered Chopped Steak", price: 23.99 },
-    { id: "sun-pork-chops", name: "Smothered Pork Chops", price: 24.99 },
+    { id: "sun-pork-chops", name: "Smothered Pork Chops", price: 24.99, image: "/images/ai-placeholder/smothered-pork-chops.webp" },
     { id: "sun-veggie", name: "Veggie Plate (4 Sides)", price: 23.99 },
-    { id: "sun-ham-hocks", name: "Ham Hocks", price: 23.99 },
+    { id: "sun-ham-hocks", name: "Ham Hocks", price: 23.99, image: "/images/ai-placeholder/ham-hocks.webp" },
     { id: "sun-bbq-fried", name: "BBQ Fried Chicken", price: 24.99, note: "Fried chicken smothered in BBQ sauce" },
-    { id: "sun-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
+    { id: "sun-catfish", name: "Fried Catfish & Spaghetti", price: 26.99, image: "/images/ai-placeholder/catfish-spaghetti.webp" },
   ],
 };
 
 export const sides: Plate[] = [
-  { id: "side-black-eyed-peas", name: "Black Eyed Peas (with or without Rice)", price: 6.5 },
-  { id: "side-red-beans", name: "Red Beans (with or without Rice)", price: 6.5 },
-  { id: "side-string-beans", name: "String Beans with White Potatoes", price: 6.5 },
-  { id: "side-dressing", name: "Cornbread Dressing", price: 6.5 },
-  { id: "side-mashed", name: "Garlic Mashed Potatoes", price: 6.5 },
-  { id: "side-yams", name: "Candied Sweet Potatoes", price: 6.5 },
-  { id: "side-rice", name: "Steamed White Rice", price: 6.5 },
+  { id: "side-black-eyed-peas", name: "Black Eyed Peas (with or without Rice)", price: 6.5, image: "/images/ai-placeholder/black-eyed-peas.webp" },
+  { id: "side-red-beans", name: "Red Beans (with or without Rice)", price: 6.5, image: "/images/ai-placeholder/red-beans-rice.webp" },
+  { id: "side-string-beans", name: "String Beans with White Potatoes", price: 6.5, image: "/images/ai-placeholder/string-beans-potatoes.webp" },
+  { id: "side-dressing", name: "Cornbread Dressing", price: 6.5, image: "/images/ai-placeholder/cornbread-dressing.webp" },
+  { id: "side-mashed", name: "Garlic Mashed Potatoes", price: 6.5, image: "/images/ai-placeholder/garlic-mashed-potatoes.webp" },
+  { id: "side-yams", name: "Candied Sweet Potatoes", price: 6.5, image: "/images/ai-placeholder/candied-sweet-potatoes.webp" },
+  { id: "side-rice", name: "Steamed White Rice", price: 6.5, image: "/images/ai-placeholder/white-rice.webp" },
   { id: "side-corn", name: "Sweet Buttery Corn", price: 6.5 },
-  { id: "side-cabbage", name: "Cabbage", price: 6.5 },
-  { id: "side-mac", name: "Macaroni & Cheese", price: 6.5 },
+  { id: "side-cabbage", name: "Cabbage", price: 6.5, image: "/images/ai-placeholder/cabbage.webp" },
+  { id: "side-mac", name: "Macaroni & Cheese", price: 6.5, image: "/images/ai-placeholder/mac-cheese.webp" },
   { id: "side-spaghetti", name: "Spaghetti", price: 6.5 },
 ];
 
@@ -149,8 +155,8 @@ export const desserts: Plate[] = [
 // Hasana's Sweets — the dessert bar operating inside Morrison's
 export const hasanasSweets: Plate[] = [
   { id: "hasana-banana-pudding-large", name: "Banana Pudding (Large)", price: 8.5, note: "Premium homemade banana pudding with wafers & Chessman cookies" },
-  { id: "hasana-biscoff-pudding", name: "Biscoff Cookie Butter Banana Pudding", price: 10, note: "Layers of fresh banana, cookie butter, wafers & Biscoff cookies" },
-  { id: "hasana-strawberry-shortcake-pudding", name: "Strawberry Shortcake Banana Pudding", price: 14.5 },
+  { id: "hasana-biscoff-pudding", name: "Biscoff Cookie Butter Banana Pudding", price: 10, note: "Layers of fresh banana, cookie butter, wafers & Biscoff cookies", image: "/images/ai-placeholder/biscoff-pudding.webp" },
+  { id: "hasana-strawberry-shortcake-pudding", name: "Strawberry Shortcake Banana Pudding", price: 14.5, image: "/images/ai-placeholder/strawberry-shortcake-pudding.webp" },
   { id: "hasana-chessman-pudding", name: "Chessman Banana Pudding", price: 11.5, note: "No bananas" },
   { id: "hasana-peach-cobbler", name: "Peach Cobbler", price: 11.5 },
   { id: "hasana-cherry-cobbler", name: "Cherry Cobbler", price: 11.5 },
@@ -160,7 +166,7 @@ export const hasanasSweets: Plate[] = [
   { id: "hasana-strawberry-cookie", name: "Strawberry Cookie", price: 5.5 },
   { id: "hasana-banana-pudding-cookie", name: "Banana Pudding Cookie", price: 5.5 },
   { id: "hasana-red-velvet-oreo", name: "Red Velvet Oreo Cookie", price: 5.5 },
-  { id: "hasana-snickerdoodle-lucky-charm", name: "Snickerdoodle x Lucky Charm Cookie", price: 5.5 },
+  { id: "hasana-snickerdoodle-lucky-charm", name: "Snickerdoodle x Lucky Charm Cookie", price: 5.5, image: "/images/ai-placeholder/snickerdoodle-lucky-charms.webp" },
 ];
 
 export type ByPieceItem = { id: string; name: string; price: number; unit: string; note?: string };
