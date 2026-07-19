@@ -7,6 +7,7 @@ import PlateCard from "@/components/PlateCard";
 import PanCard from "@/components/PanCard";
 import PieceCard from "@/components/PieceCard";
 import Story from "@/components/Story";
+import FeaturedGrid from "@/components/FeaturedGrid";
 import {
   dailyPlates,
   sides,
@@ -122,6 +123,7 @@ export default function Home() {
             <p className="mb-6 font-body text-sm text-cream2/60">
               Every plate comes with 2 sides and 2 muffins.
             </p>
+            <FeaturedGrid items={plates.filter((p) => p.image)} />
             <div>
               {plates.map((p) => (
                 <PlateCard key={p.id} {...p} />
