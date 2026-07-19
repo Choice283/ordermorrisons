@@ -3,6 +3,7 @@ export type Plate = {
   name: string;
   price: number;
   note?: string;
+  image?: string;
 };
 
 export type DayName =
@@ -18,7 +19,7 @@ export type DayName =
 export const dailyPlates: Record<DayName, Plate[]> = {
   Monday: [
     { id: "mon-baked-dress", name: "Baked Chicken with Dressing", price: 23.99 },
-    { id: "mon-fried", name: "Fried Chicken", price: 23.99 },
+    { id: "mon-fried", name: "Fried Chicken", price: 23.99, image: "/images/gallery-3.jpg" },
     { id: "mon-hot-honey", name: "Hot Honey Chicken", price: 24.99 },
     { id: "mon-cajun", name: "Cajun Chicken", price: 24.99 },
     { id: "mon-smothered", name: "Smothered Chicken", price: 24.99 },
@@ -30,9 +31,9 @@ export const dailyPlates: Record<DayName, Plate[]> = {
     { id: "mon-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
   ],
   Tuesday: [
-    { id: "tue-short-ribs", name: "Short Ribs of Beef", price: 34.99 },
+    { id: "tue-short-ribs", name: "Short Ribs of Beef", price: 34.99, image: "/images/gallery-4.jpg" },
     { id: "tue-baked", name: "Baked Chicken", price: 23.99 },
-    { id: "tue-fried", name: "Fried Chicken", price: 23.99 },
+    { id: "tue-fried", name: "Fried Chicken", price: 23.99, image: "/images/gallery-3.jpg" },
     { id: "tue-hot-honey", name: "Hot Honey Chicken", price: 24.99 },
     { id: "tue-cajun", name: "Cajun Chicken", price: 24.99 },
     { id: "tue-smothered", name: "Smothered Chicken", price: 24.99 },
@@ -45,11 +46,11 @@ export const dailyPlates: Record<DayName, Plate[]> = {
   ],
   Wednesday: [
     { id: "wed-baked", name: "Baked Chicken", price: 23.99 },
-    { id: "wed-fried", name: "Fried Chicken", price: 23.99 },
+    { id: "wed-fried", name: "Fried Chicken", price: 23.99, image: "/images/gallery-3.jpg" },
     { id: "wed-hot-honey", name: "Hot Honey Chicken", price: 24.99 },
     { id: "wed-cajun", name: "Cajun Chicken", price: 24.99 },
     { id: "wed-smothered", name: "Smothered Chicken", price: 24.99 },
-    { id: "wed-short-ribs", name: "Short Ribs of Beef", price: 34.99 },
+    { id: "wed-short-ribs", name: "Short Ribs of Beef", price: 34.99, image: "/images/gallery-4.jpg" },
     { id: "wed-chopped-steak", name: "Smothered Chopped Steak", price: 23.99 },
     { id: "wed-pork-chops", name: "Smothered Pork Chops", price: 23.99 },
     { id: "wed-corned-beef", name: "Corned Beef & Cabbage", price: 27.99 },
@@ -59,9 +60,9 @@ export const dailyPlates: Record<DayName, Plate[]> = {
     { id: "wed-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
   ],
   Thursday: [
-    { id: "thu-short-ribs", name: "Short Ribs of Beef", price: 34.99 },
+    { id: "thu-short-ribs", name: "Short Ribs of Beef", price: 34.99, image: "/images/gallery-4.jpg" },
     { id: "thu-baked-dress", name: "Baked Chicken & Dressing", price: 23.99 },
-    { id: "thu-fried", name: "Fried Chicken", price: 23.99 },
+    { id: "thu-fried", name: "Fried Chicken", price: 23.99, image: "/images/gallery-3.jpg" },
     { id: "thu-hot-honey", name: "Hot Honey Chicken", price: 24.99 },
     { id: "thu-cajun", name: "Cajun Chicken", price: 24.99 },
     { id: "thu-smothered", name: "Smothered Chicken", price: 24.99 },
@@ -75,10 +76,10 @@ export const dailyPlates: Record<DayName, Plate[]> = {
     { id: "thu-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
   ],
   Friday: [
-    { id: "fri-short-ribs", name: "Short Ribs of Beef", price: 34.99 },
+    { id: "fri-short-ribs", name: "Short Ribs of Beef", price: 34.99, image: "/images/gallery-4.jpg" },
     { id: "fri-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
     { id: "fri-baked", name: "Baked Chicken", price: 23.99 },
-    { id: "fri-fried", name: "Fried Chicken", price: 23.99 },
+    { id: "fri-fried", name: "Fried Chicken", price: 23.99, image: "/images/gallery-3.jpg" },
     { id: "fri-hot-honey", name: "Hot Honey Chicken", price: 24.99 },
     { id: "fri-cajun", name: "Cajun Chicken", price: 24.99 },
     { id: "fri-smothered", name: "Smothered Chicken", price: 24.99 },
@@ -90,9 +91,9 @@ export const dailyPlates: Record<DayName, Plate[]> = {
     { id: "fri-bbq-fried", name: "BBQ Fried Chicken", price: 24.99, note: "Fried chicken smothered in BBQ sauce" },
   ],
   Saturday: [
-    { id: "sat-short-ribs", name: "Short Ribs of Beef", price: 34.99 },
+    { id: "sat-short-ribs", name: "Short Ribs of Beef", price: 34.99, image: "/images/gallery-4.jpg" },
     { id: "sat-baked", name: "Baked Chicken", price: 23.99 },
-    { id: "sat-fried", name: "Fried Chicken", price: 23.99 },
+    { id: "sat-fried", name: "Fried Chicken", price: 23.99, image: "/images/gallery-3.jpg" },
     { id: "sat-hot-honey", name: "Hot Honey Chicken", price: 24.99 },
     { id: "sat-tky-dress", name: "Turkey Wing & Dressing", price: 26.99 },
     { id: "sat-rib-tips", name: "BBQ Rib Tips", price: 24.99 },
@@ -104,9 +105,9 @@ export const dailyPlates: Record<DayName, Plate[]> = {
     { id: "sat-catfish", name: "Fried Catfish & Spaghetti", price: 26.99 },
   ],
   Sunday: [
-    { id: "sun-short-ribs", name: "Short Ribs of Beef", price: 34.99 },
+    { id: "sun-short-ribs", name: "Short Ribs of Beef", price: 34.99, image: "/images/gallery-4.jpg" },
     { id: "sun-cornish-hen", name: "Cornish Hen & Dressing", price: 28.99 },
-    { id: "sun-fried", name: "Fried Chicken", price: 23.99 },
+    { id: "sun-fried", name: "Fried Chicken", price: 23.99, image: "/images/gallery-3.jpg" },
     { id: "sun-baked", name: "Baked Chicken", price: 23.99 },
     { id: "sun-hot-honey", name: "Hot Honey Chicken", price: 24.99 },
     { id: "sun-smothered", name: "Smothered Chicken", price: 24.99 },
