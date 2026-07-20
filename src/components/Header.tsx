@@ -35,7 +35,7 @@ export default function Header() {
         >
           Cart
           {itemCount > 0 && (
-            <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-morrisonred text-[11px] font-semibold text-cream">
+            <span className="absolute -right-2 -top-2 flex h-5 w-5 items-center justify-center rounded-full bg-morrisonred text-[11px] font-semibold text-white">
               {itemCount}
             </span>
           )}

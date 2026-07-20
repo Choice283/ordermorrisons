@@ -9,17 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        charcoal: "#1B1512",
-        surface: "#241B16",
-        surface2: "#2E221B",
+        charcoal: "#FFFFFF",   // was near-black bg — now the page background
+        surface: "#FAF8F5",    // was dark card bg — now a soft off-white for header/cards
+        surface2: "#F1ECE3",   // was darker card bg — now a slightly deeper cream for contrast blocks
         oxblood: "#7A2233",
         oxblood2: "#9A2E42",
         morrisonred: "#D1001F",
-        brass: "#CC9A3F",
-        brass2: "#E3B75C",
-        cream: "#F4EDE1",
-        cream2: "#D9CBB5",
+        brass: "#B8863B",      // darkened from the original gold so it reads on white
+        brass2: "#A6762E",     // darkened further — this is used for text/prices, needed real contrast
+        cream: "#1B1512",      // was light text-on-dark — now the main dark text color
+        cream2: "#4A3B30",     // was secondary light text — now secondary dark text
         sage: "#6F7A5A",
+        ink: "#1B1512",        // fixed dark, for intentional dark accents (e.g. the ticket stub)
+        paper: "#F4EDE1",      // fixed light cream, for text sitting on "ink"
+        gold: "#E3B75C",       // fixed light gold, for text sitting on "ink"
       },
       fontFamily: {
         display: ["var(--font-fraunces)", "serif"],

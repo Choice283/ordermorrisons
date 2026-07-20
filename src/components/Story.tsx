@@ -23,7 +23,7 @@ export default function Story() {
           {reviews.map((r) => (
             <div
               key={r.name}
-              className="rounded-sm border border-brass/15 bg-charcoal/40 p-5"
+              className="rounded-sm border border-brass/20 bg-surface2 p-5 shadow-sm"
             >
               <p className="font-body text-sm italic leading-relaxed text-cream2/80">
                 &ldquo;{r.quote}&rdquo;

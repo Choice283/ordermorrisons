@@ -78,16 +78,16 @@ export default function Home() {
               </div>
             </div>
 
-            {/* Ticket stub */}
-            <div className="relative -rotate-2 self-start justify-self-start rounded-sm border-2 border-dashed border-brass2/50 bg-charcoal px-6 py-5 sm:justify-self-end">
-              <p className="font-body text-[10px] uppercase tracking-[0.3em] text-oxblood2">
+            {/* Ticket stub — kept intentionally dark, like a punched receipt, against the white hero */}
+            <div className="relative -rotate-2 self-start justify-self-start rounded-sm border-2 border-dashed border-gold/50 bg-ink px-6 py-5 shadow-md sm:justify-self-end">
+              <p className="font-body text-[10px] uppercase tracking-[0.3em] text-morrisonred">
                 Order Up
               </p>
-              <p className="mt-1 font-display text-3xl text-brass2">
+              <p className="mt-1 font-display text-3xl text-gold">
                 {today}
               </p>
-              <p className="font-body text-xs text-cream2/60">{dateStr}</p>
-              <p className="mt-3 border-t border-brass/20 pt-2 font-body text-[11px] text-cream2/50">
+              <p className="font-body text-xs text-paper/60">{dateStr}</p>
+              <p className="mt-3 border-t border-gold/20 pt-2 font-body text-[11px] text-paper/50">
                 {plates.length} plates on today&apos;s board
               </p>
             </div>
