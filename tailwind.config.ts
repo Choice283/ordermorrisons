@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        charcoal: "#FFFFFF",   // was near-black bg — now the page background
-        surface: "#FAF8F5",    // was dark card bg — now a soft off-white for header/cards
-        surface2: "#F1ECE3",   // was darker card bg — now a slightly deeper cream for contrast blocks
+        charcoal: "#FBF8F3",   // was pure white — now a soft warm off-white
+        surface: "#F6F1E9",    // slightly deeper off-white for header/cards
+        surface2: "#EDE5D6",   // a bit more depth for contrast blocks
         oxblood: "#7A2233",
         oxblood2: "#9A2E42",
         morrisonred: "#D1001F",
