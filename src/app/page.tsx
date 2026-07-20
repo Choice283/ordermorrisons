@@ -48,15 +48,15 @@ export default function Home() {
         <div className="absolute inset-0">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/images/hero.jpg"
+            src="/images/gallery-4.jpg"
             alt=""
             aria-hidden="true"
-            className="h-full w-full object-cover opacity-25"
+            className="h-full w-full object-cover opacity-40"
             onError={(e) => {
               (e.target as HTMLImageElement).style.display = "none";
             }}
           />
-          <div className="absolute inset-0 bg-gradient-to-b from-surface/70 via-surface/90 to-surface" />
+          <div className="absolute inset-0 bg-gradient-to-b from-surface/40 via-surface/80 to-surface" />
         </div>
         <div className="relative mx-auto max-w-3xl px-5 py-14 sm:py-20">
           <div className="grid gap-10 sm:grid-cols-[1fr_auto] sm:items-center">
